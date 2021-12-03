@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-image: url('/background.png');
+                background-size: cover;
+            }
+
+            fieldset {
+                width: 53%;
+                margin: 0 auto;
+                padding: 25px;
+                font-family: Segoe UI;
+                text-align: center;
+                border-radius: 5px;
+                border-bottom: #3bd2c1;
+                border-right: #3bd2c1;
+                border-top: #37474f;
+                border-left: #37474f;
+                border-style: solid;
+                background-color: #fff;
+            }
+
+            input {
+                margin-right: 10px;
+            }
+
+            .login {
+                text-align: center;
+                color: #fff;
+            }
+
+            .login a {
+                color: #fff;
+            }
+
+            .avatar {
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            .avatar img {
+                width: 30%;
+            }
+
+            button {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                background-color: #37474f;
+                cursor: pointer;
+            }
+
+            button:hover {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                color: #37474f;
+                background-color: #3bd2c1;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="avatar">
+            <img src="http://www.ecardcenters.com/img/login-img.png" alt="login">
+        </div>
+        <fieldset>
+            <form action="/register" method="POST">
+                <label for="login">Login:</label>
+                <input type="text" name="login" id="login" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+                <button type="submit">cadastrar</button>
+            </form>
+        </fieldset>
+        <div class="login">
+            <p>Já possuo conta <a href="/login">Quero entrar</a></p>
+        </div>
+    </body>
+
+</html>
