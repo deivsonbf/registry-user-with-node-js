@@ -3,8 +3,6 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const app = express();
 
-const defaultController = require('./routes/default-router')
-
 app.engine('html', require('ejs').renderFile)
 
 app.set('view-engine', 'ejs');
@@ -22,6 +20,6 @@ app.use(session({
 }))
 app.use(flash())
 
-app.use('/', defaultController);
+app.use('/', require('./routes/default-router'));
 
 module.exports = app;
